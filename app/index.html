@@ -19,7 +19,9 @@
 
 
   <body ng-app="stockDogApp" ng-controller="MainCtrl">
-    <nav class="navbar navbar-inverse" role="navigation" ng-cloak>
+
+  <nav class="navbar navbar-inverse" role="navigation" ng-cloak>
+
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle"
@@ -30,7 +32,6 @@
           </button>
           <a class="navbar-brand" href="/">Stock Dog</a>
         </div>
-
         <div class="collapse navbar-collapse" id="main-nav">
           <ul class="nav navbar-nav navbar-right">
             <li ng-class="{active: activeView === 'dashBoard'}" class="dropdown">
@@ -66,7 +67,9 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -87,6 +90,7 @@
         <script src="scripts/controllers/dashboard.js"></script>
         <script src="scripts/controllers/watchlist.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/services/company-service.js"></script>
         <!-- endbuild -->
 </body>
 </html>

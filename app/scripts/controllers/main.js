@@ -12,11 +12,10 @@ angular.module('stockDogApp')
 
     $scope.watchlists = WatchlistService.query();
 
-
     $scope.$watch(function () {
       return $location.path();
     }, function (path) {
-      if (_.contains(path, 'watchlist')) {
+      if (_.includes(path, 'watchlist')) {
         $scope.activeView = 'watchlist';
       } else {
         $scope.activeView = 'dashboard';

@@ -14,8 +14,8 @@
     </div>
     <div class="list-group">
       <a class="list-group-item"
-         ng-class="{ active: currentList == list.id }"
          ng-repeat="list in watchlists track by $index"
+         ng-class="{ active: currentList == list.id }"
          ng-click="gotoList(list.id)">
         {{list.name}}
         <button type="button" class="close"

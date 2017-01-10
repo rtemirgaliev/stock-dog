@@ -44,6 +44,7 @@ angular.module('stockDogApp')
         };
 
         $scope.currentList = $routeParams.listId;
+
         $scope.gotoList = function (listId) {
           $location.path('watchlist/' + listId);
         };
