@@ -22,7 +22,7 @@ angular.module('stockDogApp')
     var WatchListModel = {
       addStock: function (stock) {
         var existingStock = _.find(this.stocks, function (s) {
-          return s.company.symbol === stock.compamy.symbol;
+          return s.company.symbol === stock.company.symbol;
         });
         if (existingStock) {
           existingStock.shares += stock.shares;
